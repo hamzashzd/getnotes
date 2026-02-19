@@ -1,0 +1,75 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: monospace;
+}
+
+.navbar {
+    background-color: #333; /* Dark background color */
+    overflow: hidden; /* Ensures any floated or positioned items stay within the container */
+    display: flex; /* Use Flexbox for easy alignment of logo and links */
+    justify-content: space-between; /* Puts space between the logo and the list of links */
+    align-items: center; /* Vertically centers the items */
+    padding: 0 20px;
+    position: fixed; /* Fixes the navbar to the top of the viewport */
+    top: 0;
+    width: 100%;
+    z-index: 10; /* Ensures the navbar is above other content when scrolling */
+}
+
+.logo {
+    color: white;
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.navbar ul {
+    list-style-type: none; /* Removes the default bullet points */
+    display: flex; /* Arranges list items horizontally */
+}
+
+.navbar li a {
+    display: block; /* Makes the entire link area clickable */
+    color: #f2f2f2; /* Light text color */
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none; /* Removes the default underlines from links */
+    font-size: 17px;
+    transition: background-color 0.3s, color 0.3s; /* Smooth transition for hover effects */
+}
+
+/* Change the color of links on hover */
+.navbar li a:hover {
+    background-color: #ddd; /* Light gray background on hover */
+    color: black;
+}
+
+/* Add an active class to highlight the current page */
+.navbar li a.active {
+    background-color: #7e7e8096;
+    color: white;
+}
+footer {
+    background-color: #333; /* Dark background */
+    color: white; /* White text color */
+    text-align: center; /* Center align text */
+    padding: 20px 0; /* Add some padding top and bottom */
+    width: 100%; /* Ensure it spans the full width */
+    margin-top: 5em; /* Add space between content and footer */
+}
+
+footer a {
+    color: #ffffff; /* Style links inside the footer */
+    text-decoration: none;
+}
+
+.thumbnail:hover {
+    border: #333 20px solid; /* Add a border on hover */
+    border-radius: 50%;
+}
+
+::selection {
+    background-color: #666565; /* Dark background for selected text */
+    color: white; /* White text color for selected text */
+}
